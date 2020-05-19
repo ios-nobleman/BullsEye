@@ -21,12 +21,17 @@ struct ContentView: View {
     VStack {
          
       // Target row
-      Text("Welcome to my first app!")
-        .fontWeight(Font.Weight.black)
-        .foregroundColor(.green)
+        HStack {
+            Text("Put the bullseye as close as you can to:")
+            Text("100")
+        }
         
       // Slider row
-      // TODO: Add views for the slider row here.
+        HStack {
+            Text("1")
+            Slider(value: .constant(10))
+            Text("100")
+        }
         
       // Button row
       Button(action: {
@@ -42,7 +47,9 @@ struct ContentView: View {
        }
         
       // Score row
-      // TODO: Add views for the score, rounds, and start and info buttons here.
+        HStack {
+            Text("Placeholder")
+        }
     }
   }
 
